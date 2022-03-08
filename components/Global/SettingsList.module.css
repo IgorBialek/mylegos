@@ -1,0 +1,94 @@
+.container {
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--text);
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: var(--shadow);
+}
+
+.size {
+  color: var(--background);
+  margin: 0;
+  display: flex;
+}
+
+.size p:last-child {
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.container p {
+  color: var(--background);
+  margin: 0;
+}
+
+.container > div {
+  margin: 10px;
+}
+
+.container > div:last-child {
+  margin-top: 50px;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colors input {
+  margin-left: 10px;
+}
+
+.save {
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 25px;
+  align-self: center;
+  font-size: 16px;
+}
+
+.save p {
+  color: var(--text);
+}
+
+.logout {
+  margin-top: 25px;
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 25px;
+  align-self: center;
+}
+
+.logout p {
+  color: var(--text);
+}
+
+.db {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secretContainer {
+  display: flex;
+}
+
+.secret {
+  margin: 0;
+  user-select: none;
+}
+
+.secret:hover {
+  cursor: pointer;
+}
+
+.permitted {
+  color: rgb(0, 200, 0) !important;
+}

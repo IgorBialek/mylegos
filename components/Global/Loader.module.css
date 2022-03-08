@@ -1,0 +1,23 @@
+.loader {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  width: 10%;
+}
+
+.loader img {
+  margin: 0 0 -45% 0;
+  width: 100%;
+  height: 100%;
+  filter: invert(17%) sepia(9%) saturate(7292%) hue-rotate(109deg)
+    brightness(101%) contrast(95%);
+}
+
+.loader svg {
+  fill: red;
+}

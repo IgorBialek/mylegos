@@ -1,0 +1,32 @@
+.tooltip {
+  background-color: var(--background);
+  box-shadow: var(--shadow);
+  padding: 10px;
+  font-size: 75%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.indicator {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.indicator svg {
+  margin: 5px;
+}
+
+.tooltip div {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip b {
+  margin-right: 5px;
+}

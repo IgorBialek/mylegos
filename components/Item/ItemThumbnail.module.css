@@ -1,0 +1,152 @@
+.controlsContainer a {
+  padding: 10px;
+  background: var(--text);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--background);
+  align-self: flex-end;
+  box-shadow: var(--shadow);
+  display: flex;
+  height: 37px;
+}
+
+.button {
+  padding: 10px;
+  background: var(--text);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--background);
+  box-shadow: var(--shadow);
+  display: flex;
+  height: 37px;
+  justify-self: center;
+  align-self: center;
+  line-height: 100%;
+}
+
+.button svg {
+  font-size: 16px;
+}
+
+.controlsContainer {
+  height: 37px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  border: 3px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: var(--shadow);
+  height: 300px;
+  width: 300px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.container:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.image {
+  max-height: calc(100% - 136px);
+  max-width: calc(100% - 26px);
+}
+
+.text {
+  text-align: center;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete {
+  top: -10px;
+  right: -10px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.delete:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.1);
+  background-color: rgb(217, 0, 0);
+}
+
+.delete svg {
+  font-size: 20px;
+  color: white;
+}
+
+.transfer svg {
+  font-size: 15px;
+  color: var(--background);
+}
+
+.transfer {
+  top: -10px;
+  right: 25px;
+  position: absolute;
+  background-color: var(--text);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.transfer:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.1);
+  background-color: var(--hover);
+}
+
+.editable {
+  animation: shake infinite 0.3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(-0.5deg);
+  }
+  75% {
+    transform: rotateZ(0.5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

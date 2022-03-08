@@ -1,0 +1,54 @@
+.setted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text);
+  border-radius: 25px;
+  box-shadow: var(--shadow);
+  font-size: 16px;
+  font-weight: bold;
+  width: 150px;
+  height: 41px;
+  color: var(--background);
+}
+
+.setted svg {
+  margin-left: 10px;
+}
+
+.container {
+  width: 150px;
+  height: 41px;
+  position: relative;
+  z-index: 10;
+}
+
+.list {
+  background-color: var(--text);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.option {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+.option p {
+  color: var(--background);
+}
+
+.option:first-child {
+  padding-top: 10px;
+}
+
+.option:last-child {
+  padding-bottom: 10px;
+}

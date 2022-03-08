@@ -1,0 +1,20 @@
+.indicator {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.indicator svg {
+  margin: 5px;
+}
+
+.positive {
+  color: rgb(0, 200, 0);
+}
+
+.negative {
+  color: red;
+}

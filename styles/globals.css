@@ -1,0 +1,153 @@
+:root {
+  --hue: 145;
+  --saturation: 85%;
+  --light: 15%;
+  --hue2: 0;
+  --saturation2: 0%;
+  --light2: 100%;
+  --hover-light: 5%;
+  --text: hsl(var(--hue), var(--saturation), var(--light));
+  --background: hsl(var(--hue2), var(--saturation2), var(--light2));
+  --hover: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--light) - var(--hover-light))
+  );
+  --hover2: hsl(
+    var(--hue2),
+    var(--saturation2),
+    calc(var(--light2) - var(--hover-light))
+  );
+
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html,
+body,
+#__next,
+.container,
+main {
+  height: 100%;
+}
+
+a,
+p,
+h1,
+span,
+div {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.hover {
+  transition: 0.1s;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: var(--hover);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.hover2 {
+  transition: 0.1s;
+}
+
+.hover2:hover {
+  cursor: pointer;
+  background-color: var(--hover2);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.hover2Link > a,
+.hover2Link > p {
+  transition: 0.1s;
+}
+
+.hover2Link > a:hover,
+.hover2Link > p:hover {
+  cursor: pointer;
+  color: var(--hover2);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.hoverLink > a,
+.hoverLink > p {
+  transition: 0.1s;
+}
+
+.hoverLink > a:hover,
+.hoverLink > p:hover {
+  cursor: pointer;
+  color: var(--hover);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 25px;
+  border: none;
+  background: none;
+  border-radius: 25px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: solid 3px var(--background);
+  border-radius: 25px;
+}
+
+.fallback {
+  margin: 25px;
+  fill: var(--text);
+}

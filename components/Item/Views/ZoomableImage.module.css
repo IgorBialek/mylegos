@@ -1,0 +1,62 @@
+.image {
+  padding: 50px;
+  padding-top: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+.nextControl {
+  font-size: 50px;
+  position: absolute;
+  top: calc((100vh + 100px) / 2);
+  right: 25%;
+  transition: 0.2s;
+}
+
+.prevControl {
+  font-size: 50px;
+  position: absolute;
+  top: calc((100vh + 100px) / 2);
+  left: 25%;
+  transition: 0.2s;
+}
+
+.nextControl:hover,
+.prevControl:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.button {
+  top: 150px;
+  position: absolute;
+  padding: 10px;
+  background-color: var(--text);
+  color: var(--background);
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+
+.bulletsContainer {
+  bottom: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulletsContainer svg {
+  margin: 1px;
+}
